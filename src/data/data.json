@@ -1,10 +1,10 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Белтехавтоматик",
+    "paragraph": "Производитель электрощитового оборудования. Комплектуем и собираем шкафы на любом оборудовании!"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Мы отвечаем за качествою В стенах нашей компании готовое изделие проходит поэтапный контроль качества. Проверяется исправность изоляции каждого компонента, корректность сборки комплектующих и роботоспособность изделия в целом. Сборка электротехнических устройств осуществляется строго по нормам действующих технических условий. Оборудование нашего производства установлено  н государственных обьектах..",
     "Why": [
       "Lorem ipsum dolor",
       "Tempor incididunt",

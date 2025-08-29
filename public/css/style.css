@@ -86,6 +86,12 @@ hr {
   font-weight: 700;
   color: #333;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+#menu a.navbar-brand img {
+  width:48px;
+  height: 48px;
 }
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
@@ -96,6 +102,12 @@ hr {
   padding: 8px 2px;
   border-radius: 0;
   margin: 9px 20px 0;
+}
+@media screen and (max-width: 1200px) {
+  #menu.navbar-default .navbar-nav > li > a{
+    margin: 9px 8px 0;
+  }
+
 }
 #menu.navbar-default .navbar-nav > li > a:after {
   display: block;
@@ -201,7 +213,7 @@ a:focus,
 .btn:active.focus,
 .btn.active.focus {
   outline: none;
-  outline-offset: none;
+
 }
 /* Header Section */
 .intro {
@@ -221,11 +233,17 @@ a:focus,
 .intro h1 {
   font-family: "Raleway", sans-serif;
   color: #fff;
-  font-size: 82px;
+  font-size: clamp(42px, 7vw, 82px);
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 1200px) {
+  intro h1{
+    font-size: 64px;
+  }
 }
 .intro h1 span {
   font-weight: 800;
@@ -233,16 +251,21 @@ a:focus,
 }
 .intro p {
   color: #fff;
-  font-size: 22px;
-  font-weight: 300;
+  font-size: clamp(18px, 2.5vw, 22px);
+  font-weight: 700;
   line-height: 30px;
   margin: 0 auto;
   margin-bottom: 60px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 header .intro-text {
   padding-top: 350px;
   padding-bottom: 200px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* Features Section */
 #features {
@@ -346,6 +369,8 @@ header .intro-text {
 }
 #services p {
   color: rgba(255, 255, 255, 0.75);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: clamp(18px, 2.5vw, 22px);
 }
 #services .service-desc {
   margin-bottom: 40px;
@@ -533,8 +558,7 @@ label {
 #contact .form-control:focus {
   border-color: #999;
   outline: 0;
-  -webkit-box-shadow: transparent;
-  box-shadow: transparent;
+
 }
 .form-control::-webkit-input-placeholder {
   color: #777;
