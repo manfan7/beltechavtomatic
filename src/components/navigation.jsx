@@ -49,11 +49,7 @@ export const Navigation = (props) => {
                Отзывы
               </a>
             </li>
-            <li>
-              <a href="#team" className="page-scroll">
-                Наша команда
-              </a>
-            </li>
+
             <li>
               <a href="#contact" className="page-scroll">
                 Контакты

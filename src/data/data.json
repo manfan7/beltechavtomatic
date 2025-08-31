@@ -152,9 +152,21 @@
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+1 123 456 1234",
-    "email": "info@company.com",
+    "address": "230001, РБ, Гродненская обл., Гродненский р-н, Коптёвский с/с, д. Чеховщина, здание ПООО «Интерком»",
+    "phone": [
+      {
+        "first": "+375 (29) 889-50- 88",
+        "second": "+375 (44) 749-50-88"
+      }
+
+    ],
+
+
+    "email":[
+      "iinfo@sse.by",
+      "ss.energy@tut.by"
+    ],
+
     "facebook": "fb.com",
     "twitter": "twitter.com",
     "youtube": "youtube.com"
