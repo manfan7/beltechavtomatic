@@ -23,8 +23,17 @@ export const Services = (props) => {
                 </div>
               ))
             : "loading"}
+
+
         </div>
+          <div className={'delivery-service'}>
+              <p className={'dostavka'}>
+                  Осуществляем доставку во все регионы Беларуси
+              </p>
+              <img src={'../../img/MAP.jpg'} alt={'map of delivering'}/>
+          </div>
       </div>
+
     </div>
   );
 };

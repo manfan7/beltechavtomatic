@@ -390,10 +390,49 @@ header .intro-text {
 #services p {
   color: rgba(255, 255, 255, 0.75);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  font-size: clamp(18px, 2.5vw, 22px);
+  font-size: clamp(20px, 2.5vw, 23px);
 }
 #services .service-desc {
   margin-bottom: 40px;
+
+}
+#services .service-desc p {
+  font-size: clamp(16px, 2.5vw, 16px);
+}
+ #services .dostavka{
+   font-size: 36px;
+   font-weight: bold;
+position: relative;
+   z-index: 4;
+ }
+#services .delivery-service {
+
+}
+ #services .delivery-service img {
+   width: 100%;
+   box-shadow:
+     /* Внутренняя тень */
+           inset 0 0 20px rgba(0, 0, 0, 0.1),
+           inset 0 0 30px rgba(0, 0, 0, 0.06),
+
+             /* Внешняя тень */
+           0 8px 25px rgba(0, 0, 0, 0.15),
+           0 4px 12px rgba(0, 0, 0, 0.1),
+           0 2px 6px rgba(0, 0, 0, 0.08);
+   border-radius: 12px; /* добавляет скругление углов */
+   transition: all 0.3s ease;
+   margin-top: -35px;
+   z-index: -1;
+ }
+#services .delivery-service img:hover {
+  box-shadow:
+          inset 0 0 25px rgba(0, 0, 0, 0.15),
+          inset 0 0 40px rgba(0, 0, 0, 0.08),
+          0 12px 35px rgba(0, 0, 0, 0.2),
+          0 6px 18px rgba(0, 0, 0, 0.15),
+          0 3px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  z-index: -1;
 }
 /* Portfolio Section */
 #portfolio {
