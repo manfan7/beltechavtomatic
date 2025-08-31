@@ -4,75 +4,75 @@
     "paragraph": "Производитель электрощитового оборудования. Комплектуем и собираем шкафы на любом оборудовании!"
   },
   "About": {
-    "paragraph": "Мы отвечаем за качествою В стенах нашей компании готовое изделие проходит поэтапный контроль качества. Проверяется исправность изоляции каждого компонента, корректность сборки комплектующих и роботоспособность изделия в целом. Сборка электротехнических устройств осуществляется строго по нормам действующих технических условий. Оборудование нашего производства установлено  н государственных обьектах..",
+    "paragraph": "Мы занимаемся производством, сборкой электрощитового оборудования любой сложности, а также продажей электротехнической продукции. Мы отвечаем за качество. В стенах нашей компании готовое изделие проходит поэтапный контроль качества. Проверяется исправность изоляции каждого компонента, корректность сборки комплектующих и роботоспособность изделия в целом. Сборка электротехнических устройств осуществляется строго по нормам действующих технических условий. Оборудование нашего производства установлено н государственных обьектах",
     "Why": [
       "большой выбор работ, где действует система оценки объема",
       "оперативные сроки выполнения",
-      "избыточная устойчивость к нагрузкам"
+      "избыточная устойчивость к нагрузкам",
+      "техническая и постгарантийная поддержка",
+      "сервисное обслуживание систем автоматизации"
     ],
     "Why2": [
       "индивидуальный подход к каждому проекту",
       "собственные технические решения",
-      "осуществляем доставку во все регионы РБ"
+      "осуществляем доставку во все регионы РБ",
+      "проектирование, производство и внедрение систем промышленного оборудования",
+      "подбор и поставка электротехнического оборудования"
     ]
   },
   "Gallery": [
     {
-      "title": "Project Title",
+      "title": "вводно-распределительное устройство ВРУ",
       "largeImage": "img/portfolio/01-large.jpg",
       "smallImage": "img/portfolio/01-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "щиты контроллерные ЩК",
       "largeImage": "img/portfolio/02-large.jpg",
       "smallImage": "img/portfolio/02-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Шкафы управления ШУ",
       "largeImage": "img/portfolio/03-large.jpg",
       "smallImage": "img/portfolio/03-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Шкафы распределительные",
       "largeImage": "img/portfolio/04-large.jpg",
       "smallImage": "img/portfolio/04-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Шкаф управления насосной станцией",
       "largeImage": "img/portfolio/05-large.jpg",
       "smallImage": "img/portfolio/05-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Шкаф управления станцией второго подъёма",
       "largeImage": "img/portfolio/06-large.jpg",
       "smallImage": "img/portfolio/06-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "шкаф управления повысительной насосной станцией",
       "largeImage": "img/portfolio/07-large.jpg",
       "smallImage": "img/portfolio/07-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Шкаф управления насосной станций рециркуляционного и избыточного ила",
       "largeImage": "img/portfolio/08-large.jpg",
       "smallImage": "img/portfolio/08-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
     }
+
   ],
   "Services": [
     {
       "icon": "fa fa-wordpress",
       "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "text": "Автоматизация котельных станций."
     },
     {
       "icon": "fa fa-cart-arrow-down",
       "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "text": "Системы управления для насосных станций."
     },
     {
       "icon": "fa fa-cloud-download",
@@ -98,53 +98,78 @@
   "Testimonials": [
     {
       "img": "img/testimonials/01.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "text": "Вводно-распределительное устройство ВРУ",
       "name": "John Doe"
     },
     {
       "img": "img/testimonials/02.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "text": "Щит контроллерный ЩК",
       "name": "Johnathan Doe"
     },
     {
       "img": "img/testimonials/03.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "text": "Шкаф управления ШУ",
       "name": "John Doe"
     },
     {
       "img": "img/testimonials/04.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "text": "Шкаф распределительный",
       "name": "Johnathan Doe"
     },
     {
       "img": "img/testimonials/05.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "text": "Шкаф управления канализационной насосной станции",
       "name": "John Doe"
     },
     {
       "img": "img/testimonials/06.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "text": "Шкаф управления насосной станций рециркуляционного и избыточного ила",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/07.jpg",
+      "text": "шкаф управления повысительной насосной станцией",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/08.jpg",
+      "text": "Шкаф распределения и управления пожарной насосной станцией",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/08.jpg",
+      "text": "Шкаф управления станцией второго подъёма",
       "name": "Johnathan Doe"
     }
   ],
   "Team": [
     {
-      "img": "img/team/01.jpg",
+      "img": "img/team/01..png",
       "name": "John Doe",
       "job": "Director"
     },
     {
-      "img": "img/team/02.jpg",
+      "img": "img/team/02.png",
       "name": "Mike Doe",
       "job": "Senior Designer"
     },
     {
-      "img": "img/team/03.jpg",
+      "img": "img/team/03.png",
       "name": "Jane Doe",
       "job": "Senior Designer"
     },
     {
-      "img": "img/team/04.jpg",
+      "img": "img/team/04.png",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    },
+    {
+      "img": "img/team/06.png",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    },
+    {
+      "img": "img/team/10.png",
       "name": "Karen Doe",
       "job": "Project Manager"
     }

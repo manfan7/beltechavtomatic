@@ -162,7 +162,7 @@ export const Contact = (props) => {
                 <span>
                   <i className="fa fa-envelope-o"></i> Email
                 </span>{" "}
-                                {props.data ?  props.data.email.map(item=><p>{item}</p>) : "loading"}
+                                {props.data ?  props.data.email.map(item=><p key={item}>{item}</p>) : "loading"}
                             </p>
                         </div>
                     </div>
@@ -194,7 +194,6 @@ export const Contact = (props) => {
             <div id="footer">
                 <div className="container text-center">
                     <p>
-
                     </p>
                 </div>
             </div>
