@@ -1,6 +1,7 @@
 import {useState} from "react";
 import emailjs from "emailjs-com";
 import React from "react";
+import {InteractiveMap} from "./Map";
 
 const initialState = {
     name: "",
@@ -19,13 +20,9 @@ export const Contact = (props) => {
     };
     const clearState = () => setState({...initialState});
 
-
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(name, email, message);
-
-        {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */
-        }
 
         emailjs
             .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
@@ -39,12 +36,17 @@ export const Contact = (props) => {
                 }
             );
     };
+
     return (
         <div>
             <div id="contact">
                 <div className="container">
                     <div className="col-md-8">
                         <div className="row">
+                            <div className="map-container">
+                                <InteractiveMap />
+                            </div>
+
                             <div className="section-title">
                                 <h2>Обратная связь</h2>
                                 <p>
@@ -52,7 +54,7 @@ export const Contact = (props) => {
                                     свяжемся с вами как можно скорее.
                                 </p>
                             </div>
-                            <form name="sentMessage" validate onSubmit={handleSubmit}>
+                            <form name="sentMessage" onSubmit={handleSubmit}>
                                 <div className="row">
                                     <div className="col-md-6">
                                         <div className="form-group">
@@ -84,15 +86,15 @@ export const Contact = (props) => {
                                     </div>
                                 </div>
                                 <div className="form-group">
-                  <textarea
-                      name="message"
-                      id="message"
-                      className="form-control"
-                      rows="4"
-                      placeholder="Сообщение"
-                      required
-                      onChange={handleChange}
-                  ></textarea>
+                                    <textarea
+                                        name="message"
+                                        id="message"
+                                        className="form-control"
+                                        rows="4"
+                                        placeholder="Сообщение"
+                                        required
+                                        onChange={handleChange}
+                                    ></textarea>
                                     <p className="help-block text-danger"></p>
                                 </div>
                                 <div id="success"></div>
@@ -105,65 +107,62 @@ export const Contact = (props) => {
                     <div className="col-md-3 col-md-offset-1 contact-info">
                         <div className="contact-item">
                             <h3>Контактная информация</h3>
-                            <p>
-                <span>
-                  <i className="fa fa-map-marker"></i> Юридический адресс
-                </span>
-                                {props.data ? props.data.address : "loading"}
-                            </p>
+                            <div>
+                                <span>
+                                    <i className="fa fa-map-marker"></i> Юридический адрес
+                                </span>
+                                <p>{props.data ? props.data.address : "loading"}</p>
+                            </div>
                             <span> Юридическая инофрмация</span>
                             <p className={'pcontact'}>
                                 УНП 591 528 081
                             </p>
                             <hr/>
-                            <p className={'pcontact'}>
-                                IBAN: BY30 ALFA 3012 2679 1600 1027 0000
-                                в ЗАО «АЛЬФА-БАНК», г. Минск
-                                BIK: ALFABY2X
-                            </p>
-                            <hr/>
-                            <p className={'pcontact'}>
-                                BIK: ALFABY2X
-                            </p>
                         </div>
                         <div className="contact-item">
-                            <p>
-                <span>
-                  <i className="fa fa-phone"></i> Телефон
-                </span>{" "}
-                                {props.data ? (
-                                    <>
-                                        <p>
-                                            <a
-                                                href={`tel:${formatPhoneNumber(props.data.phone[0].first)}`}
-                                                style={{textDecoration: 'none', color: 'inherit'}}
-                                                className="phone-link"
-                                            >
-                                                {props.data.phone[0].first}
-                                            </a>
-                                        </p>
-                                        <p>
-                                            <a
-                                                href={`tel:${formatPhoneNumber(props.data.phone[0].second)}`}
-                                                style={{textDecoration: 'none', color: 'inherit'}}
-                                                className="phone-link"
-                                            >
-                                                {props.data.phone[0].second}
-                                            </a>
-                                        </p>
-                                    </>
-                                ) : (
-                                    <p>loading</p>
-                                )}
-                            </p>
+                            <div>
+                                <span>
+                                    <i className="fa fa-phone"></i> Телефон
+                                </span>
+                                <div>
+                                    {props.data ? (
+                                        <>
+                                            <p>
+                                                <a
+                                                    href={`tel:${formatPhoneNumber(props.data.phone[0].first)}`}
+                                                    style={{textDecoration: 'none', color: 'inherit'}}
+                                                    className="phone-link"
+                                                >
+                                                    {props.data.phone[0].first}
+                                                </a>
+                                            </p>
+                                            <p>
+                                                <a
+                                                    href={`tel:${formatPhoneNumber(props.data.phone[0].second)}`}
+                                                    style={{textDecoration: 'none', color: 'inherit'}}
+                                                    className="phone-link"
+                                                >
+                                                    {props.data.phone[0].second}
+                                                </a>
+                                            </p>
+                                        </>
+                                    ) : (
+                                        <span>loading</span>
+                                    )}
+                                </div>
+                            </div>
                         </div>
                         <div className="contact-item">
-                            <p>
-                <span>
-                  <i className="fa fa-envelope-o"></i> Email
-                </span>{" "}
-                                {props.data ?  props.data.email.map(item=><p key={item}>{item}</p>) : "loading"}
-                            </p>
+                            <div>
+                                <span>
+                                    <i className="fa fa-envelope-o"></i> Email
+                                </span>
+                                <div>
+                                    {props.data ? props.data.email.map(item =>
+                                        <p key={item}>{item}</p>
+                                    ) : "loading"}
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="col-md-12">
@@ -189,12 +188,6 @@ export const Contact = (props) => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div id="footer">
-                <div className="container text-center">
-                    <p>
-                    </p>
                 </div>
             </div>
         </div>

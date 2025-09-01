@@ -6,9 +6,9 @@ export const Image = ({ title, largeImage, smallImage }) => {
       <div className="hover-bg">
         {" "}
         <a href={largeImage} target="_blank" title={title} data-lightbox-gallery="gallery1">
-          <div className="hover-text">
+         {/* <div className="hover-text">
             <h4>{title}</h4>
-          </div>
+          </div>*/}
           <img src={smallImage} className="img-responsive widthClass" alt={title} />{" "}
         </a>{" "}
       </div>

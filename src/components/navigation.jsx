@@ -40,16 +40,15 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
+              <a href="#testimonials" className="page-scroll">
+                Наше производство
+              </a>
+            </li>
+            <li>
               <a href="#portfolio" className="page-scroll">
                 Галерея
               </a>
             </li>
-            <li>
-              <a href="#testimonials" className="page-scroll">
-               Наше производство
-              </a>
-            </li>
-
             <li>
               <a href="#contact" className="page-scroll">
                 Контакты

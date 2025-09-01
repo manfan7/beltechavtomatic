@@ -363,7 +363,7 @@ header .intro-text {
    margin-top: 40px;
   }
   #about img{
-    max-height: 500px;
+    max-height: 360px;
   }
 }
 #about p {
@@ -453,7 +453,7 @@ position: relative;
  }
 
  #services .delivery-service img {
-   width: 65%;
+   width: 55%;
   /* box-shadow:
      !* Внутренняя тень *!
            inset 0 0 20px rgba(0, 0, 0, 0.1),
@@ -490,6 +490,13 @@ position: relative;
   overflow: hidden;
   position: relative;
   margin: 0;
+  transition: .4s;
+}
+.widthClass{
+  transition: .4s;
+}
+.portfolio-item .hover-bg:hover .widthClass {
+ transform: scale(1.1);
 }
 .hover-bg .hover-text {
   position: absolute;
@@ -538,18 +545,21 @@ position: relative;
   font-size: 32px;
   margin-bottom: 20px;
 }
+#testimonials li {
+  font-size: 16px;
+}
 .testimonial {
   position: relative;
   padding: 20px;
 }
 .testimonial-image {
   float: left;
-  margin-right: 15px;
+
 }
 .testimonial-image,
 .testimonial-image img {
   display: block;
-  width:164px;
+  width:80%;
   height: 164px;
 
 }
@@ -570,7 +580,7 @@ position: relative;
 }
 .numbered-block {
   text-align: left;
-  max-width: 800px;
+  max-width: 1120px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -605,17 +615,23 @@ position: relative;
   background-color: #edeefa;
 }
 #team p{
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 600;
 }
 #team h4 {
   margin: 5px 0;
 }
 #team .team-img {
-  width: 240px;
+  width: 220px;
 }
 #team .thumbnail {
   background: transparent;
   border: 0;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #team .thumbnail .caption {
   padding: 10px 0 0;
@@ -624,18 +640,18 @@ position: relative;
 .team-descr{
   width: 100%;
   margin-left: 0px;
-  text-align: left;xt
+  text-align: left;
 }
 /* Contact Section */
 #contact {
-  padding: 100px 0 60px;
+  padding: 30px 0 60px;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   color: rgba(253, 251, 251, 0.75);
   font-weight: 600;
 }
-#contact .section-title {
+/*#contact .section-title {
   margin-bottom: 40px;
-}
+}*/
 #contact .section-title p {
   font-size: 16px;
 }
@@ -651,9 +667,9 @@ position: relative;
 }
 #contact h2 {
   color: #fff;
-  margin-top: 10px;
-  margin-bottom: 15px;
+   margin-bottom: 15px;
   padding-bottom: 15px;
+  margin-top: 45px;
 }
 #contact .section-title h2::after {
   position: absolute;
@@ -666,10 +682,11 @@ position: relative;
 }
 #contact h3 {
   color: #fff;
-  margin-top: 80px;
+font-size: 26px;
+
   margin-bottom: 25px;
   padding-bottom: 20px;
-  font-weight: 400;
+  font-weight: 600;
 }
 #contact form {
   padding-top: 20px;
@@ -679,7 +696,7 @@ position: relative;
   text-align: left;
 }
 #contact .btn-custom {
-  margin: 30px 0;
+  margin: 3px 0;
   background: transparent;
   border: 2px solid #fff;
 }
@@ -783,3 +800,187 @@ label {
     margin: 50px 0;
   }
 }*/
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  position: relative;
+}
+#contact h2:before{
+  content: "";
+  position: absolute;
+  bottom: 74px;
+  width: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: #292727;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  border: 4px solid #f8f9fa;
+  margin-bottom: 20px;
+}
+
+.testimonial-content p {
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+
+}
+
+.testimonial-name {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Адаптивность */
+@media (min-width: 576px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+/* Контейнер для логотипов */
+#clients-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+/* Каждая колонка с логотипом */
+#clients-row .team {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Контейнер изображения */
+#clients-row .thumbnail {
+
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 200px;
+}
+
+#clients-row .thumbnail:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Само изображение логотипа */
+#clients-row .team-img {
+  max-width: 100%;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+#clients-row .team-img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Адаптивность */
+
+
+
+
+@media (min-width: 768px) {
+  #clients-row .team {
+    flex: 0 0 calc(50% - 40px); /* 2 колонки */
+  }
+}
+@media (min-width: 992px) {
+  #clients-row .team {
+    flex: 0 0 calc(33.333% - 40px); /* 3 колонки */
+  }
+}
+@media (min-width: 1200px) {
+  #clients-row .team {
+    flex: 0 0 calc(25% - 40px); /* 4 колонки */
+  }
+}
+@media (max-width: 767px) {
+  #clients-row {
+    gap: 30px;
+  }
+
+  #clients-row .team {
+    flex: 0 0 calc(50% - 30px); /* 2 колонки на мобильных */
+  }
+
+  #clients-row .thumbnail {
+    height: 120px;
+    width: 160px;
+    padding: 15px;
+  }
+
+  #clients-row .team-img {
+    max-height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  #clients-row .team {
+    flex: 0 0 100%; /* 1 колонка на маленьких экранах */
+    max-width: 250px;
+  }
+}

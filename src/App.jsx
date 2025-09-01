@@ -10,6 +10,7 @@ import {Contact} from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
+import SeoHelmet from "./components/SeoHelmet";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -24,6 +25,11 @@ const App = () => {
 
   return (
     <div>
+        <SeoHelmet
+            title="Белтехавтоматик - Производитель электрощитового оборудования"
+            description="Производитель электрощитового оборудования. Комплектуем и собираем шкафы на любом оборудовании. Качество и надежность."
+            keywords="электрощитовое оборудование, производитель электрощитов, Беларусь, электротехника"
+        />
       <Navigation />
       <Header data={landingPageData.Header} />
       <About data={landingPageData.About} />
