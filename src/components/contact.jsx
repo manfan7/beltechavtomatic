@@ -2,7 +2,7 @@ import {useState} from "react";
 import emailjs from "emailjs-com";
 import React from "react";
 import {InteractiveMap} from "./Map";
-
+import 'bootstrap-icons/font/bootstrap-icons.css';
 const initialState = {
     name: "",
     email: "",
@@ -145,6 +145,15 @@ export const Contact = (props) => {
                                                     {props.data.phone[0].second}
                                                 </a>
                                             </p>
+                                            <p>
+                                                <a
+                                                    href={`tel:${formatPhoneNumber(props.data.phone[0].third)}`}
+                                                    style={{textDecoration: 'none', color: 'inherit'}}
+                                                    className="phone-link"
+                                                >
+                                                    {props.data.phone[0].third}
+                                                </a>
+                                            </p>
                                         </>
                                     ) : (
                                         <span>loading</span>
@@ -170,18 +179,18 @@ export const Contact = (props) => {
                             <div className="social">
                                 <ul>
                                     <li>
-                                        <a href={props.data ? props.data.facebook : "/"}>
-                                            <i className="fa fa-facebook"></i>
+                                        <a target="_blank"  href={props.data ? props.data.telegramm : "/"}>
+                                            <i className="fa bi-telegram"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href={props.data ? props.data.twitter : "/"}>
-                                            <i className="fa fa-twitter"></i>
+                                        <a target="_blank"  href={props.data ? props.data.whatsup : "/"}>
+                                            <i className="fa bi-whatsapp"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href={props.data ? props.data.youtube : "/"}>
-                                            <i className="fa fa-youtube"></i>
+                                        <a target="_blank"  href={props.data ? props.data.viber : "/"}>
+                                            <i className="fa bi-chat-dots-fill"></i>
                                         </a>
                                     </li>
                                 </ul>

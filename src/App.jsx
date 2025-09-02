@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import {Navigation} from "./components/navigation";
 import {Header} from "./components/header";
 import {About} from "./components/about";
-import {Services} from "./components/services";
+import {ServicesMap} from "./components/servicesMap";
 import {Gallery} from "./components/gallery";
 import {Testimonials} from "./components/testimonials";
 import {Team} from "./components/Team";
@@ -11,6 +11,7 @@ import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import SeoHelmet from "./components/SeoHelmet";
+import {Services} from "./components/services";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -33,9 +34,11 @@ const App = () => {
       <Navigation />
       <Header data={landingPageData.Header} />
       <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
-        <Testimonials data={landingPageData.Testimonials} />
+        <ServicesMap data={landingPageData.Services} />
         <Team data={landingPageData.Team}/>
+<Services/>
+        <Testimonials data={landingPageData.Testimonials} />
+
       <Gallery data={landingPageData.Gallery} />
 
       <Contact data={landingPageData.Contact} />

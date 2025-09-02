@@ -5,9 +5,7 @@ export const Testimonials = (props) => {
     <div id="testimonials">
       <div className="container">
           <div className="section-title text-center">
-              <h2>Оборудование нашего производства установлено на государственных объектах, а также на объектах частных
-                  компаний</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolor dolore earum eligendi ex fugiat mollitia nobis, quaerat reiciendis sunt. Ad autem commodi culpa doloremque ea esse laudantium qui quidem sapiente voluptatem? Cupiditate id ipsam laboriosam suscipit! Distinctio dolor ducimus eos maxime quos! Aliquid consequuntur deserunt doloribus ex facere fugiat ipsum modi nemo reprehenderit sed. Aliquid animi, deserunt dicta maxime optio pariatur quae quaerat sapiente sed veniam! A aliquam aliquid architecto dolores doloribus eaque et facilis fuga ipsam ipsum iure laborum nemo officia perspiciatis quam, quibusdam quis quisquam quos sequi tempore. Aliquid dignissimos dolore eum fuga nisi quae quas. Dolorum.</p>
+
 
               <div className="numbered-block">
                   <ol className="numbered-list">

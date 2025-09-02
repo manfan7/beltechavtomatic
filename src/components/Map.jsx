@@ -2,8 +2,8 @@ import { YMaps, Map, Placemark, ZoomControl, GeolocationControl } from '@pbe/rea
 const API_KEY = '180dd9a7-7075-43bd-9f0d-ba13c0186b79'
 export const InteractiveMap = () => {
     const mapState = {
-        center: [52.091778, 23.678172],
-        zoom: 15,
+        center: [53.556944, 23.998611],
+        zoom: 12,
     };
 
     return (
@@ -20,7 +20,7 @@ export const InteractiveMap = () => {
                 modules={['control.ZoomControl', 'control.GeolocationControl']}
             >
                 <Placemark
-                    geometry={[52.091778, 23.678172]}
+                    geometry={[53.556944, 23.998611]}
                     properties={{
                         balloonContentHeader: 'Белтехавтоматик',
                         balloonContentBody: 'Производитель электрощитового оборудования',
