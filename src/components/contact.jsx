@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import React from "react";
 import {InteractiveMap} from "./Map";
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import {Modal} from "./Modal";
 const initialState = {
     name: "",
     email: "",
@@ -13,7 +14,9 @@ export const Contact = (props) => {
         return phone.replace(/\D/g, ''); // удаляем все нецифровые символы
     };
     const [{name, email, message}, setState] = useState(initialState);
-
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [modalStatus, setModalStatus] = useState(''); // 'success' or 'error'
+    const [modalMessage, setModalMessage] = useState('');
     const handleChange = (e) => {
         const {name, value} = e.target;
         setState((prevState) => ({...prevState, [name]: value}));
@@ -25,18 +28,26 @@ export const Contact = (props) => {
         console.log(name, email, message);
 
         emailjs
-            .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+            .sendForm("service_f0kli9k", "template_uk34rmq", e.target, "rlfjpugbTrN7kqIwc")
             .then(
                 (result) => {
                     console.log(result.text);
+                    setModalStatus('success');
+                    setModalMessage('Ваше сообщение успешно отправлено! Мы свяжемся с вами в ближайшее время.');
+                    setIsModalOpen(true);
                     clearState();
                 },
                 (error) => {
+                    setModalStatus('error');
+                    setModalMessage('Произошла ошибка при отправке сообщения. Пожалуйста, попробуйте еще раз или свяжитесь с нами другим способом.');
+                    setIsModalOpen(true);
                     console.log(error.text);
                 }
             );
     };
-
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
     return (
         <div>
             <div id="contact">
@@ -102,6 +113,12 @@ export const Contact = (props) => {
                                     Отправить
                                 </button>
                             </form>
+                            <Modal
+                                isOpen={isModalOpen}
+                                onClose={closeModal}
+                                status={modalStatus}
+                                message={modalMessage}
+                            />
                         </div>
                     </div>
                     <div className="col-md-3 col-md-offset-1 contact-info">
