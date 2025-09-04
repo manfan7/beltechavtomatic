@@ -5,19 +5,18 @@ export const Services = () => {
         <div id="services" className="text-center">
             <div className="container">
                 <div className="section-title">
-                    <h2>Белтехавтоматик </h2>
-                    <div className={'services_title__container'}>
-                        <p className={'services_title'}> осуществляет изготовление:</p>
+                                        <div className={'services_title__container'}>
+                        <p className={'services_title'}> Наша компания работает в следующих направлениях:</p>
                     </div>
 
                     <div className="numbered-block">
                         <ol className="numbered-list">
                                 <ul className="inner-list">
-                                    <li>систем автоматизации котельных станций</li>
-                                    <li>систем управления для насосных станций</li>
-                                    <li>систем автоматизации систем водоснабжения и водоотведения </li>
-                                    <li>систем диспетчеризации</li>
-                                    <li>низковольтных комплектных устройств</li>
+                                    <li>система автоматизации котельных станций</li>
+                                    <li>система управления для насосных станций</li>
+                                    <li>система автоматизации систем водоснабжения и водоотведения </li>
+                                    <li>система диспетчеризации технологических процессов</li>
+                                    <li> изготовление низковольтных комплектных устройств</li>
                                 </ul>
 
                         </ol>

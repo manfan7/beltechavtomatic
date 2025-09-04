@@ -129,6 +129,10 @@ export const Contact = (props) => {
                                     <i className="fa fa-map-marker"></i> Юридический адрес
                                 </span>
                                 <p>{props.data ? props.data.address : "loading"}</p>
+                                <span>
+                                    <i className="fa fa-map-marker"></i> Адрес производства
+                                </span>
+                                <p>{props.data ? props.data.adressproizdodstvo : "loading"}</p>
                             </div>
                             <span> Юридическая инофрмация</span>
                             <p className={'pcontact'}>
